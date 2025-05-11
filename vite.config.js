@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vue-weather-app/',
+  build: {
+    outDir: 'docs'
+  },
   plugins: [
     vue(),
     tailwindcss(),
